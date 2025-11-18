@@ -27,3 +27,22 @@ function computeGrade(grade) {
 }
 
 computeGrade(94.49);
+
+
+function login(username, password) {
+
+    if (username === "Mentops") {
+
+        if (password === 12345678) {
+            console.log("Welcome User");
+        } else {
+            console.log("Invalid Login Credentials");
+        }
+
+    } else {
+        console.log("Invalid User")
+    }
+
+}
+
+login("Mentops", 12345678)

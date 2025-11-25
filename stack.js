@@ -32,6 +32,16 @@ class Stack{
         if (this.is_empty()) return null;
         return this.data[this.topIndex];
     }
+
+    pop(){
+        if(this.is_empty()) return null;
+
+        let value = this.data[this.topIndex];
+        delete this.data[this.topIndex];
+        this.topIndex--;
+        return value;
+
+    }
 }
 
 //
@@ -43,7 +53,9 @@ stack1.push(2);
 stack1.push(3);
 stack1.push(5);
 stack1.push(8);
-stack1.traverse();
 console.log(stack.is_empty());
 console.log(stack1.size());
 console.log("The top element is " + stack1.peek());
+console.log("Top element"+ stack1.pop() + " is popped, the new top element is" + stack1.peek);
+console.log("The new stack size is " +stack1.size());
+stack1.traverse();

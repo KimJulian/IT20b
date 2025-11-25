@@ -28,7 +28,10 @@ class Stack{
         return this.topIndex+1;
     }
 
-    
+    peek(){
+        if (this.is_empty()) return null;
+        return this.data[this.topIndex];
+    }
 }
 
 //

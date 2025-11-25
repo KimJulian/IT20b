@@ -47,15 +47,15 @@ class Stack{
 //
 stack1 = new Stack();
 
-console.log(stack.is_empty());
+console.log(stack1.is_empty());
 stack1.push(4);
 stack1.push(2);
 stack1.push(3);
 stack1.push(5);
 stack1.push(8);
-console.log(stack.is_empty());
+console.log(stack1.is_empty());
 console.log(stack1.size());
 console.log("The top element is " + stack1.peek());
-console.log("Top element"+ stack1.pop() + " is popped, the new top element is" + stack1.peek);
+console.log("Top element "+ stack1.pop() + " is popped, the new top element is " + stack1.peek());
 console.log("The new stack size is " +stack1.size());
 stack1.traverse();

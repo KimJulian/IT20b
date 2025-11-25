@@ -20,6 +20,24 @@ class Array{
 
         console.log(output);
     }
+
+    insert(index, element){
+
+        if(index <0 || index > this.length){
+            //Correcting Statement || Must be False
+            console.log("Invalid Index");
+            return;
+        }
+
+        //Shifting Condition
+        for(let i=this.length; i>index; i--){
+            this.data[i] = this.data[i-1];
+        }
+
+        //After Condition
+        this.data[index] = element;
+        this.length++;
+    }
 }
 
 //

@@ -24,6 +24,10 @@ class Stack{
         return this.topIndex === -1;
     }
 
+    size(){
+        return this.topIndex+1;
+    }
+
     
 }
 

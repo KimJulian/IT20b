@@ -57,6 +57,17 @@ class Array{
         this.length--;
 
     }
+
+    update(index,element){
+        //Correcting Statement || Must be False
+        if(index <0 || index > this.length){
+            console.log("Invalid Index");
+            return;
+        }
+
+        //After Condition
+        this.data[index] = element;
+    }
 }
 
 //
@@ -65,5 +76,9 @@ arr1 = new Array([4,2,3]);
 arr1.traverse();
 arr1.insert(0,9);
 arr1.traverse();
+
 arr1.delete(1);
+arr1.traverse();
+
+arr1.update(2,5);
 arr1.traverse();

@@ -29,7 +29,21 @@ class LinkedList{
         return output;
     }
 
-    
+        insert_at_end(element){
+        const node = new Node(element);
+
+        if(!this.head){
+            this.head = node;
+            return;
+        }
+
+        let current = this.head;
+
+        while(current.next){
+            current.next
+        }
+    }
+
 }
 
 let list1 = new LinkedList();

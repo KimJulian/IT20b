@@ -11,6 +11,12 @@ class LinkedList{
         this.head = null;
     }
 
+    insert_at_beginning(element){
+        const node = new Node(element);
+        node.next = this.head;
+        this.head = node;
+    }
+
    
 }
 

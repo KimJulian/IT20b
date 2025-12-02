@@ -17,7 +17,19 @@ class LinkedList{
         this.head = node;
     }
 
-   
+    traverse(){
+        let current = this.head;
+        let output = " ";
+
+        while(current){
+            output += current.value + " ";
+            current = current.next;
+        }
+
+        return output;
+    }
+
+    
 }
 
 let list1 = new LinkedList();

@@ -56,4 +56,4 @@ queue1.enqueue(3);
 console.log("The current queue size is: " + queue1.size());
 
 console.log(queue1.dequeue()+" has been dequeued, the new front is: " + queue1.front());
-
+console.log(queue1.dequeue()+" has been dequeued, the new front is: " + queue1.front());
